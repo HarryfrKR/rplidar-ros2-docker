@@ -24,8 +24,6 @@ WORKDIR /ros2_ws
 # Install ROS 2 dependencies
 RUN source /opt/ros/${ROS_DISTRO}/setup.bash && \
     apt-get update -y \
- && apt-get install -y \
-    ros-${ROS_DISTRO}-rviz2 \
  && mkdir src \
  && cd src \
  && git clone https://github.com/Slamtec/sllidar_ros2 \
